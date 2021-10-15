@@ -14,6 +14,7 @@ const Book = () => {
     <article>
       <Image />
       <Title />
+      <Author />
     </article>
   );
 };
@@ -28,12 +29,12 @@ const Image = () => {
 };
 
 const Title = () => {
-  return <h1>I Love You to the Moon and Back</h1>
-}
+  return <h1>I Love You to the Moon and Back</h1>;
+};
 
-// const Author = () => {
-//   return <h4>
-//     Amelia Hepworth
-//   </h4>
-// }
+const Author = () => {
+  return <h4>Amelia Hepworth</h4>;
+};
+
+
 ReactDom.render(<Booklist />, document.getElementById("root"));
