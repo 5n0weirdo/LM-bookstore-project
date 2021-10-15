@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
+import "./index.css";
 
 function Booklist() {
   return (
@@ -22,6 +23,7 @@ function Booklist() {
 const Heading = () => {
   return <h1>Booklist:</h1>;
 };
+
 const Book = () => {
   return (
     <article>
