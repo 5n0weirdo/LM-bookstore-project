@@ -4,11 +4,24 @@ import ReactDom from "react-dom";
 function Booklist() {
   return (
     <section>
+      {/* <Heading /> */}
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
       <Book />
     </section>
   );
 }
-
+// const Heading = () => {
+//   return <h1>Booklist:</h1>;
+// };
 const Book = () => {
   return (
     <article>
@@ -35,6 +48,5 @@ const Title = () => {
 const Author = () => {
   return <h4>Amelia Hepworth</h4>;
 };
-
 
 ReactDom.render(<Booklist />, document.getElementById("root"));
