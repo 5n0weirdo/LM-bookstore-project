@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
+
+//CSS
 import "./index.css";
 
 function Booklist() {
   return (
-    <section>
-      <Heading />
+    <section className="booklist">
+      {/* <Heading /> */}
       <Book />
       <Book />
       <Book />
@@ -20,13 +22,13 @@ function Booklist() {
     </section>
   );
 }
-const Heading = () => {
-  return <h1>Booklist:</h1>;
-};
+// const Heading = () => {
+//   return <h1>Booklist:</h1>;
+// };
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
@@ -48,7 +50,11 @@ const Title = () => {
 };
 
 const Author = () => {
-  return <h4>Amelia Hepworth</h4>;
+  return (
+    <h4 style={{ color: "#617d98", fontSize: "0.75rem", margin: "0.25rem" }}>
+      Amelia Hepworth
+    </h4>
+  );
 };
 
 ReactDom.render(<Booklist />, document.getElementById("root"));
