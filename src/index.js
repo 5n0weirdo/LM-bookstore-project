@@ -4,7 +4,7 @@ import ReactDom from "react-dom";
 function Booklist() {
   return (
     <section>
-      {/* <Heading /> */}
+      <Heading />
       <Book />
       <Book />
       <Book />
@@ -19,9 +19,9 @@ function Booklist() {
     </section>
   );
 }
-// const Heading = () => {
-//   return <h1>Booklist:</h1>;
-// };
+const Heading = () => {
+  return <h1>Booklist:</h1>;
+};
 const Book = () => {
   return (
     <article>
