@@ -34,17 +34,27 @@ const Book = (props) => {
   const { image, title, author } = props;
 
   //attribute,eventHandler
-  //onClick, onMouseOer
+  //onClick, onMouseOver
   const clickHandler = () => {
-    alert("Hellow World");
+    alert("Order");
   };
+
+  const complexExample = (author) => {
+    console.log(author);
+  };
+
+  const imageHover = () => {
+    alert(title);
+  };
+
   return (
     <article className="book">
-      <img src={image} alt="" />
+      <img src={image} onMouseOver={imageHover} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
-      <button type="button" onClick={clickHandler}>
-        Cick me!
+      <button onClick={clickHandler}>Order Now</button>
+      <button onClick={() => complexExample(author)}>
+        More complex example
       </button>
     </article>
   );
