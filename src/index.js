@@ -33,11 +33,19 @@ const Book = (props) => {
   //destructure:
   const { image, title, author } = props;
 
+  //attribute,eventHandler
+  //onClick, onMouseOer
+  const clickHandler = () => {
+    alert("Hellow World");
+  };
   return (
     <article className="book">
       <img src={image} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      <button type="button" onClick={clickHandler}>
+        Cick me!
+      </button>
     </article>
   );
 };
