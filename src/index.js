@@ -23,7 +23,13 @@ function Booklist() {
         image={firstBook.image}
         title={firstBook.title}
         author={firstBook.author}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+          libero iste illum consectetur eveniet ut?
+        </p>
+        <button>Buy Now!</button>
+      </Book>
       <Book
         image={secondBook.image}
         title={secondBook.title}
@@ -34,14 +40,15 @@ function Booklist() {
 }
 
 const Book = (props) => {
-  //destructioning:
-  const { image, title, author } = props;
-
+  //destructure:
+  const { image, title, author, children } = props;
+  console.log(props);
   return (
     <article className="book">
       <img src={image} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      {children}
     </article>
   );
 };

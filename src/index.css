@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  background: #f1f5f8;
+  background: #658aa7;
   color: #222;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .book {
-  background: #fff;
+  background: rgb(124, 159, 165);
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
@@ -33,3 +33,5 @@ body {
 .book h1 {
   margin-top: 0.5rem;
 }
+
+
