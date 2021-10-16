@@ -8,7 +8,7 @@ const Book = (props) => {
     //attribute,eventHandler
     //onClick, onMouseOver
     const clickHandler = () => {
-        alert("Order");
+        alert("Order Now");
     };
 
     const complexExample = (author) => {
